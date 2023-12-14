@@ -1,7 +1,10 @@
-import { type Request, type Response } from "@/deps";
+import { path, type Request, type Response } from "@/deps";
 
 function getMessages(_req: Request, res: Response) {
-  return res.json({ data: "Hello Albert!" });
+  const pathToFile = path.join(Deno.cwd(), "public", "Passport.jpg");
+
+  res.sendFile(pathToFile);
+  // return res.json({ data: "Hello Albert!" });
 }
 
 function postMessage(_req: Request, res: Response) {

@@ -5,3 +5,5 @@ export {
   type Request,
   type Response,
 } from "npm:express@4.18.2";
+
+export * as path from "https://deno.land/std@0.209.0/path/mod.ts";
