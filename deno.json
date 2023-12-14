@@ -4,6 +4,9 @@
         "dev": "deno run --watch --allow-net --allow-env --allow-read ./main.ts"
     },
     "imports": {
-        "@/deps": "./deps.ts"
+        "@/deps": "./deps.ts",
+        "@/routes/": "./routes/",
+        "@/models/": "./models/",
+        "@/controllers/": "./controllers/"
     }
 }
